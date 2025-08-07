@@ -18,7 +18,10 @@ public class PessoaModel {
 
     Long id;
     private String nome;
+
+    @Column(unique = true)
     private String email;
+
     private int idade;
 
     //Um carro para pessoa
